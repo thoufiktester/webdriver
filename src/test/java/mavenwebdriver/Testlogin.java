@@ -34,15 +34,16 @@ public class Testlogin {
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			driver.findElement(By.id("identifierId")).sendKeys("trainer@way2automation.com");
+			driver.findElement(By.xpath("//*[@id='identifierNext']/span/span")).click();
 			
 		}
 		
-		@AfterSuite
-		public void teardown()
-		{
-			driver.quit();
-			
-		}
+	//	@AfterSuite
+		//public void teardown()
+		//{
+		//	driver.quit();
+		//	
+		//}
 
 	}
 
