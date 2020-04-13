@@ -38,12 +38,12 @@ public class Testlogin {
 			
 		}
 		
-	//	@AfterSuite
-		//public void teardown()
-		//{
-		//	driver.quit();
-		//	
-		//}
+		@AfterSuite
+		public void teardown()
+		{
+			driver.quit();
+			
+		}
 
 	}
 
